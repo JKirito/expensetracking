@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "tsc-watch --onSuccess \"node dist/index.js\"",
     "start": "node dist/index.js",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node -r tsconfig-paths/register src/index.ts",
     "format": "prettier --write ."
   },
   "keywords": [],
@@ -23,6 +23,7 @@
     "prettier": "^3.3.1",
     "ts-node": "^10.9.2",
     "tsc-watch": "^6.2.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.4.5"
   },
   "dependencies": {
@@ -30,3 +31,4 @@
     "winston": "^3.13.0"
   }
 }
+

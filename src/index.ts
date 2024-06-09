@@ -1,5 +1,5 @@
 import express from 'express';
-import logger from './utils/logger/logger';
+import logger from '@utils/logger/logger';
 import requestLoggerMiddleware from './middleware';
 
 const app = express();
